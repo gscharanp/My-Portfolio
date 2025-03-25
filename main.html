@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset = "UTF - 8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="Width=device-width, intial-scale=1.0">
+    <title>GSC-Portfolio</title>
+    <link rel="icon" type="image/png" href="images/tab-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c2649150d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+<!-- ------------ Home Section ------------ -->    
+<div id="header">
+    <div class="container">
+        <div class="binary-rain"></div>
+
+        <!-- <div class="gears">
+            <i class="fas fa-cog gear gear1"></i>
+            <i class="fas fa-cog gear gear2"></i>
+        </div> -->
+
+        <div class="container">
+            <div class="gears">
+                <div class="gear1">
+                    <i class="gi fa-solid fa-gear"></i>
+                </div>
+                <div class="gear2">
+                    <i class="gi fa-solid fa-gear"></i>
+                </div>
+                <div class="gear3">
+                    <i class="gi fa-solid fa-gear"></i>
+                </div>
+            </div>
+        </div>
+        
+        <nav>
+            <img src="images/241.png" alt="logo" class="header-logo">
+            <ul id = "sidemenu">
+                <li><a href="#home" class="slide-up" onclick="closemenu()">Home</a></li>
+                <li><a href="#about" class="slide-up" onclick="closemenu()">About</a></li>
+                <li><a href="#services" class="slide-up" onclick="closemenu()">Services</a></li>
+                <li><a href="#Projects" class="slide-up" onclick="closemenu()">Projects</a></li>
+                <li><a href="#Certificates" class="slide-up" onclick="closemenu()">Certification</a></li>
+                <li><a href="#contact" class="slide-up" onclick="closemenu()">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Charan</span><br>From Visakhaptnam.</h1>
+        </div>
+    </div>
+</div>
+<!-- ------------ About Section ------------ --> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                <img src="images/about.jpg" alt="sai">
+            </div>
+            <div class="col2">
+                <h1 class="title">About Me</h1>
+                <p>Hi, I'm G. Sai Charan, a Frontend Web Developer with experience in building user-friendly and visually appealing websites. I specialize in creating responsive UI/UX designs using WordPress (Avada Builder), Shopify, and FlutterFlow. I also have hands-on experience in HTML and CSS, making necessary modifications to enhance website functionality and user experience.<br>
+                <p>With a B.Tech in Mechanical Engineering from Chaitanya Engineering College, Visakhapatnam, I have developed strong problem-solving skills and a keen eye for detail. My passion for web development allows me to transform ideas into interactive digital experiences.</p>
+                <p>I am open to remote opportunities or working in Visakhapatnam. Feel free to explore my work and connect with me!</p>
+
+                <div class="tab-titles"> 
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021</span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Excutive at Coin Digital Ltd.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - 2025</span><br><span>B.Tech - Mechanical</span></li>
+                        <li><span>2018 - 2020</span><br><span>Intermediate - MPC</span><br>Score : 80%</li>
+                        <li><span>2017 - 2018</span><br><span>SSC - 10th</span><br>Score : 88%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------- My Services ------------------------ -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Frontend Web Development</h3>
+                <p> I create responsive, user-friendly, and visually appealing websites using WordPress (Avada Builder), Shopify, and FlutterFlow. My focus is on delivering seamless user experiences with modern designs.
+                    Advantages include stealthy operation, adaptability to challenging environments, and reduced noise compared to drones<br>
+                </p>
+                <a href="#"><i class="icon fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-display"></i>
+                <h3>UI/UX Design & Customization</h3>
+                <p>I design intuitive and engaging interfaces tailored to your brand’s identity. I also modify existing UI elements to enhance aesthetics and functionality.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h3>Website Maintenance & Updates</h3>
+                <p>I provide ongoing support, ensuring your website stays up-to-date, secure, and optimized for performance. From small content updates to design refinements, I handle it all.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hashtag"></i>
+                <h3>HTML & CSS Modifications</h3>
+                <p>Need small tweaks in your website’s structure or styling? I make custom edits to HTML and CSS to refine layouts, improve responsiveness, and enhance overall design.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ------------------------- Projects -------------------------- -->
+
+<div id="Projects">
+    <div class="container">
+        <h1 class="title">My Works</h1>
+        <div class="Project-list">
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h3>Final Year Project</h3>
+                <b>Amphibian Beetle Robot</b>
+                <p> •	Developed an innovative spy robot capable of moving on water and rough terrain surfaces. <br>
+                    •	Equipped with obstacle-sensing technology.<br>
+                    •	Bidirectional communication with a remote controller.<br>
+                    •	Advantages include stealthy operation, adaptability to challenging environments, and reduced noise compared to drones<br>
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <h3>Personal Portfolio Website</h3>
+                <p>Designed and developed a fully responsive personal portfolio website to showcase my skills and projects using technologies such as HTML and CSS.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <h3>Landing Page</h3>
+                <p>This mini project is a responsive landing page built with HTML and CSS, featuring a clean and modern design.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn1">See More</button>
+</div>
+
+<!-- ------------------------- Certification -------------------------- -->
+ <div id="Certificates">
+    <div class="container">
+        <h1 class="title">My Certifications and achivements</h1>
+        <div>
+            <h3>Experience Letter</h3>
+            <p>kjdsahfkjafkjhsfkjjhfdsh kjhkxfkjdsh fkjhdfj shfdskjfkdjfdskjfhdsakhj dskfkdsj dhfkjhfhfakjhdsa ,jh hf kjhfsdhfkjfakjfuids kjh fkdsjhfjfkjhdhmnbhdih vbnvuidhjkvjbsiuhskjnfaslkjhf kfkjnfaiuhakdjnjashfd hdskjnkjfufsjlsjfbasih</p>
+        </div>
+        <div>
+            <h3>AutoCAD</h3>
+            <P>DSHJAKJHDSAKJSDKJHDS SKFK  SKFSK KFHKHDSHJS DF D SJDSKJDS; S JSDAKJSFKSDJU FSIKI W90S,K KF-ASEK9SYLKDS DS09USDKJFDOI KJDS LILDFLIJ 
+                KFJDSO SIOF ODSJ;ADSK J
+                ]SF JDSFJSDIS IAS OIFSDOI AO
+                ]SD FDSI DS SIOIXJFSDIHFSDIKSDOUF A S  DI FKJF FKSJ FSFJS FNDASSDJASUDNFHFDHB F8ERNZR  HS</P>
+        </div>
+        <div>
+            <h3>steel plant</h3>
+            <p>kjhfkafkjadshjfa dsakkdshjf osohjkldsihds  jdsfhisdkjfn  8yfjk fdssfjk dsnjds fds k uifidsfjkdshfewbdbjh  ds kdsfh uisdfkjnixu hfdnjhfuif djnkjkdhkfhdsvdb bgubjdsfbubkjsdfho8fnkjgf hdfjdjfhphsdbjh   fjfhj iu
+                 ljkh fhuifhskh ihkj j h hfkj jhfiujak sjhf asdjfjhn  as 8</p>
+        </div>
+        <div>
+            <h3>Python</h3>
+            <p>dskjhflkjhfsaskjh kjhvkjhakjdshkjlhsy8fdjf d kjgfhkjhrfmjrjbrjhdskdmnbvhdfhjd h kjfjabab amsdfajbfhaljk dsfhsdkjfasdkjhfdsajfkjsjjhjfampanjafh djhkakhjk hfk hdjnfljpiuha
+                ajhlfdhkfjnfdvhnlj jkd jkdshkdjkjdsfkjhd kjhdffds jnkhdfjhfajnfipurejthbrebshjshsduhd ddsfjhaha
+            </p>
+        </div>
+        <div>
+            <h3>solid works</h3>
+            <p>kdhfskfksdf sfjsdsfkjsdkjs ,nfdkdsksjkakjf,sks ojdskjs,jf kdsfnfkhjffjfiuhewjkdfsk k f,nfdskfkdjkf iuuhdsnfsjfiuhkdsjfhisushfksjshf sf dfkjkahfdksjhfjnfhsjsl;j[eoie,djdfjkjfahfhfkj djhfhfh dskjhdsjkdfhhjfkskjdfkha,kjasjsfkjlnklnfds</p>
+        </div>
+        <div>
+            <h3>Frontend Developer</h3>
+            <p>kasdjfkjdfslklfsdklj fklhfakskasjioh snfasdkfkdsahf;kads;fk dsfjaskdhfskjkjdsfa fjdskfhjshjfilklkaljsd ffjkjkfdskhfkjfoi fsjfksfsk sdkd dfkjsdjf skfkaskj fshfjksdfj dfskfh dsjnkfdsnfhdsakjkdsaj fdsasfkjhskfjdssjnf dskjnfkjfjd fdsjfnskjfajnf f,nfkjfd </p>
+        </div>
+    </div>
+ </div>
+
+<!-- ------------------------- Contact -------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><a href="mailto:gscharanp@gmail.com" class="mail"><i class="fa-solid fa-paper-plane"></i>gscharanp@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i> <span id="phoneNumber" onclick="copyToClipboard()">+91 92810 27354</span></p>
+                <div class="social-icons">
+                    <a href="https://wa.me/9121827906"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/gondu-sai-charan-724570352?utm
+                    _source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_kurama_lover?igsh=MW02dDQzZmZ6Z2N5dg=="><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://github.com/gscharanp"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="assets/resume.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i> Download CV </a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 GONDU SAI CHARAN. All rights reserved.</p>
+    </div>
+</div>
+<button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-circle-arrow-up"></i></button>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    function copyToClipboard() {
+        const phoneNumber = document.getElementById("phoneNumber").innerText;
+        navigator.clipboard.writeText(phoneNumber)
+            .then(() => alert("Phone number copied to clipboard!"))
+            .catch((err) => console.error("Failed to copy: ", err));
+    }
+
+    window.onscroll = function() {
+    let button = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        button.style.display = "block"; // Show button when scrolled down
+    } else {
+        button.style.display = "none"; // Hide button when at the top
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const binaryRainContainer = document.querySelector(".binary-rain");
+
+        function createBinaryDigit() {
+            const span = document.createElement("span");
+            span.innerText = Math.random() < 0.5 ? "0" : "1";
+            span.style.left = Math.random() * 100 + "vw";
+            span.style.animationDuration = Math.random() * 3 + 2 + "s";
+            binaryRainContainer.appendChild(span);
+
+            setTimeout(() => {
+                span.remove();
+            }, 5000);
+        }
+
+        setInterval(createBinaryDigit, 1);
+    });
+</script>
+
+
+</body>
+</html>
