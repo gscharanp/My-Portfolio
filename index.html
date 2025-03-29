@@ -15,12 +15,8 @@
 <!-- ------------ Home Section ------------ -->    
 <div id="header">
     <div class="container">
-        <div class="binary-rain"></div>
 
-        <!-- <div class="gears">
-            <i class="fas fa-cog gear gear1"></i>
-            <i class="fas fa-cog gear gear2"></i>
-        </div> -->
+        <canvas id="binaryCanvas"></canvas>
 
         <div class="container">
             <div class="gears">
@@ -28,7 +24,7 @@
                     <i class="gi fa-solid fa-gear"></i>
                 </div>
                 <div class="gear2">
-                    <i class="gi fa-solid fa-gear"></i>
+                    <i class="gi1 fa-solid fa-gear"></i>
                 </div>
                 <div class="gear3">
                     <i class="gi fa-solid fa-gear"></i>
@@ -43,7 +39,7 @@
                 <li><a href="#about" class="slide-up" onclick="closemenu()">About</a></li>
                 <li><a href="#services" class="slide-up" onclick="closemenu()">Services</a></li>
                 <li><a href="#Projects" class="slide-up" onclick="closemenu()">Projects</a></li>
-                <li><a href="#Certificates" class="slide-up" onclick="closemenu()">Certification</a></li>
+                <li><a href="#certificates" class="slide-up" onclick="closemenu()">Certification</a></li>
                 <li><a href="#contact" class="slide-up" onclick="closemenu()">Contact</a></li>
                 <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
@@ -55,7 +51,8 @@
         </div>
     </div>
 </div>
-<!-- ------------ About Section ------------ --> 
+<!-- ------------ About Section ------------ -->
+<!--<hr class="divider">-->  
 <div id="about">
     <div class="container">
         <div class="row">
@@ -74,24 +71,75 @@
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web app Development</li>
-                        <li><span>App Development</span><br>Building Android/iOS apps</li>
-                    </ul>
+
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-code"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-shopify"></i>
+                            <span>Shopify</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-wordpress"></i>
+                            <span>WordPress</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-mobile"></i>
+                            <span>Flutter Flow</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-paintbrush"></i>
+                            <span>Canva</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-file"></i>
+                            <span>MS Office</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-drafting-compass"></i>
+                            <span>AutoCAD</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-gears"></i>
+                            <span>SolidWorks</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2021</span><br>UI/UX Design Training at ET Institute</li>
-                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
-                        <li><span>2017 - 2019</span><br>UI/UX Design Excutive at Coin Digital Ltd.</li>
+                        <h3>BlackVision | January 2024 – February 2025 </h3>
+                        <p>•	Developed and customized WordPress websites using Avada Builder and shopify ensuring responsive and user-friendly designs.<br>
+                        •	Created visually appealing graphics and marketing materials using Canva for digital campaigns.<br>
+                        •	Assisted in Flutter Flow development, contributing to mobile app UI/UX enhancements and debugging.<br>
+                        •	Performed Excel-based data entry and analysis to maintain accurate records and streamline workflows.<br>
+                        •	Worked as a Catalog Manager, overseeing product data organization, categorization, and updates to improve listing quality and customer experience.</p>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2020 - 2025</span><br><span>B.Tech - Mechanical</span></li>
-                        <li><span>2018 - 2020</span><br><span>Intermediate - MPC</span><br>Score : 80%</li>
-                        <li><span>2017 - 2018</span><br><span>SSC - 10th</span><br>Score : 88%</li>
+                        <h3>📌 Bachelor of Technology (B.Tech) - Mechanical Engineering</h3>
+                        <p>📍 Chaitanya Engineering College<br>
+                            📅 Year of Completion: 2025</p>
+                        <h3>📌 Intermediate - MPC</h3>
+                        <p>📍 Dr. L. Bullayya Junior College<br>
+                            📅 Year of Completion: 2020</p>
+                        <h3>📌 Secondary Education (10th Standard)</h3>
+                        <p>📍 Nagarjuna High School<br>
+                            📅 Year of Completion: 2018</p>
                     </ul>
                 </div>
             </div>
@@ -100,37 +148,48 @@
 </div>
 
 <!-- ----------------------- My Services ------------------------ -->
-
+<!--<hr class="divider">-->
 <div id="services">
-    <div class="container">
-        <h1 class="title">My Services</h1>
+<div class="container">
+    <h1 class="title">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-laptop-code"></i>
-                <h3>Frontend Web Development</h3>
-                <p> I create responsive, user-friendly, and visually appealing websites using WordPress (Avada Builder), Shopify, and FlutterFlow. My focus is on delivering seamless user experiences with modern designs.
-                    Advantages include stealthy operation, adaptability to challenging environments, and reduced noise compared to drones<br>
-                </p>
-                <a href="#"><i class="icon fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            <div class="service">
+                <img src="images/frontend.jpg" alt="frontend">
+                <div class="layer">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Frontend Web Development</h3>
+                    <p> I create responsive, user-friendly, and visually appealing websites using WordPress (Avada Builder), Shopify, and FlutterFlow. My focus is on delivering seamless user experiences with modern designs<br>
+                    </p>
+                    <a href="#"><i class="icon fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-display"></i>
-                <h3>UI/UX Design & Customization</h3>
-                <p>I design intuitive and engaging interfaces tailored to your brand’s identity. I also modify existing UI elements to enhance aesthetics and functionality.
-                </p>
-                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            <div class="service">
+                <img src="images/UI-UX.jpg" alt="UI/UX">
+                <div class="layer">
+                    <i class="fa-solid fa-display"></i>
+                    <h3>UI/UX Design & Customization</h3>
+                    <p>I design intuitive and engaging interfaces tailored to your brand’s identity. I also modify existing UI elements to enhance aesthetics and functionality.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h3>Website Maintenance & Updates</h3>
-                <p>I provide ongoing support, ensuring your website stays up-to-date, secure, and optimized for performance. From small content updates to design refinements, I handle it all.</p>
-                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            <div class="service">
+                <img src="images/maintainence.jpg" alt="maintainence">
+                <div class="layer">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Website Maintenance & Updates</h3>
+                    <p>I provide ongoing support, ensuring your website stays up-to-date, secure, and optimized for performance. From small content updates to design refinements, I handle it all.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-hashtag"></i>
-                <h3>HTML & CSS Modifications</h3>
-                <p>Need small tweaks in your website’s structure or styling? I make custom edits to HTML and CSS to refine layouts, improve responsiveness, and enhance overall design.</p>
-                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+            <div class="service">
+                <img src="images/html&css.jpg" alt="lasdfk">
+                <div class="layer">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h3>HTML & CSS Modifications</h3>
+                    <p>Need small tweaks in your website’s structure or styling? I make custom edits to HTML and CSS to refine layouts, improve responsiveness, and enhance overall design.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
+                </div>
             </div>
         </div>
 
@@ -139,13 +198,13 @@
 
 
 <!-- ------------------------- Projects -------------------------- -->
-
+<!--<hr class="divider">-->
 <div id="Projects">
     <div class="container">
         <h1 class="title">My Works</h1>
         <div class="Project-list">
             <div>
-                <i class="fa-solid fa-gears"></i>
+                <i class="mw fa-solid fa-robot"></i>
                 <h3>Final Year Project</h3>
                 <b>Amphibian Beetle Robot</b>
                 <p> •	Developed an innovative spy robot capable of moving on water and rough terrain surfaces. <br>
@@ -156,61 +215,71 @@
                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
             </div>
             <div>
-                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="mw fa-solid fa-folder-open"></i>
                 <h3>Personal Portfolio Website</h3>
                 <p>Designed and developed a fully responsive personal portfolio website to showcase my skills and projects using technologies such as HTML and CSS.</p>
                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
             </div>
             <div>
-                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="mw fa-solid fa-desktop"></i>
                 <h3>Landing Page</h3>
                 <p>This mini project is a responsive landing page built with HTML and CSS, featuring a clean and modern design.</p>
                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Learn more</a>
             </div>
         </div>
+        <button type="button" class="btn">See More</button>
     </div>
-    <button type="button" class="btn btn1">See More</button>
 </div>
 
 <!-- ------------------------- Certification -------------------------- -->
- <div id="Certificates">
+
+<div id="certificates" class="certificates-section">
     <div class="container">
-        <h1 class="title">My Certifications and achivements</h1>
-        <div>
-            <h3>Experience Letter</h3>
-            <p>kjdsahfkjafkjhsfkjjhfdsh kjhkxfkjdsh fkjhdfj shfdskjfkdjfdskjfhdsakhj dskfkdsj dhfkjhfhfakjhdsa ,jh hf kjhfsdhfkjfakjfuids kjh fkdsjhfjfkjhdhmnbhdih vbnvuidhjkvjbsiuhskjnfaslkjhf kfkjnfaiuhakdjnjashfd hdskjnkjfufsjlsjfbasih</p>
+        <h1 class="title">My Certificates & achivements</h1>
+        <div class="certificate-container">
+            <div class="certificate" onclick="showCertificate('cert1')">
+                <img src="images/front-end.jpg" alt="Certificate 1">
+                <p>front-end Developer</p>
+            </div>
+            <div class="certificate" onclick="showCertificate('cert2')">
+                <img src="images/solidworks.jpg" alt="Certificate 2">
+                <p>Solid Works</p>
+            </div>
+            <div class="certificate" onclick="showCertificate('cert3')">
+                <img src="images/AutoCAD.png" alt="Certificate 3">
+                <p>AutoCAD</p>
+            </div>
+            <div class="certificate" onclick="showCertificate('cert4')">
+                <img src="images/steelplant.jpg" alt="Certificate 4">
+                <p>Design Consideration of <br>heat exchangers of<br>high pressure system</p>
+            </div>
+            <!--<div class="certificate" onclick="showCertificate('cert3')">
+                <img src="images/frontend.jpg" alt="Certificate 3">
+                <p>Certificate Title 3</p>
+            </div>
+            <div class="certificate" onclick="showCertificate('cert3')">
+                <img src="images/frontend.jpg" alt="Certificate 3">
+                <p>Certificate Title 3</p>
+            </div>
+            <div class="certificate" onclick="showCertificate('cert3')">
+                <img src="images/frontend.jpg" alt="Certificate 3">
+                <p>Certificate Title 3</p>
+            </div>
+        </div>-->
+
+        <!-- Modal for displaying certificate details -->
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" class="modal-content" alt="">
+            <div id="caption"></div>
         </div>
-        <div>
-            <h3>AutoCAD</h3>
-            <P>DSHJAKJHDSAKJSDKJHDS SKFK  SKFSK KFHKHDSHJS DF D SJDSKJDS; S JSDAKJSFKSDJU FSIKI W90S,K KF-ASEK9SYLKDS DS09USDKJFDOI KJDS LILDFLIJ 
-                KFJDSO SIOF ODSJ;ADSK J
-                ]SF JDSFJSDIS IAS OIFSDOI AO
-                ]SD FDSI DS SIOIXJFSDIHFSDIKSDOUF A S  DI FKJF FKSJ FSFJS FNDASSDJASUDNFHFDHB F8ERNZR  HS</P>
-        </div>
-        <div>
-            <h3>steel plant</h3>
-            <p>kjhfkafkjadshjfa dsakkdshjf osohjkldsihds  jdsfhisdkjfn  8yfjk fdssfjk dsnjds fds k uifidsfjkdshfewbdbjh  ds kdsfh uisdfkjnixu hfdnjhfuif djnkjkdhkfhdsvdb bgubjdsfbubkjsdfho8fnkjgf hdfjdjfhphsdbjh   fjfhj iu
-                 ljkh fhuifhskh ihkj j h hfkj jhfiujak sjhf asdjfjhn  as 8</p>
-        </div>
-        <div>
-            <h3>Python</h3>
-            <p>dskjhflkjhfsaskjh kjhvkjhakjdshkjlhsy8fdjf d kjgfhkjhrfmjrjbrjhdskdmnbvhdfhjd h kjfjabab amsdfajbfhaljk dsfhsdkjfasdkjhfdsajfkjsjjhjfampanjafh djhkakhjk hfk hdjnfljpiuha
-                ajhlfdhkfjnfdvhnlj jkd jkdshkdjkjdsfkjhd kjhdffds jnkhdfjhfajnfipurejthbrebshjshsduhd ddsfjhaha
-            </p>
-        </div>
-        <div>
-            <h3>solid works</h3>
-            <p>kdhfskfksdf sfjsdsfkjsdkjs ,nfdkdsksjkakjf,sks ojdskjs,jf kdsfnfkhjffjfiuhewjkdfsk k f,nfdskfkdjkf iuuhdsnfsjfiuhkdsjfhisushfksjshf sf dfkjkahfdksjhfjnfhsjsl;j[eoie,djdfjkjfahfhfkj djhfhfh dskjhdsjkdfhhjfkskjdfkha,kjasjsfkjlnklnfds</p>
-        </div>
-        <div>
-            <h3>Frontend Developer</h3>
-            <p>kasdjfkjdfslklfsdklj fklhfakskasjioh snfasdkfkdsahf;kads;fk dsfjaskdhfskjkjdsfa fjdskfhjshjfilklkaljsd ffjkjkfdskhfkjfoi fsjfksfsk sdkd dfkjsdjf skfkaskj fshfjksdfj dfskfh dsjnkfdsnfhdsakjkdsaj fdsasfkjhskfjdssjnf dskjnfkjfjd fdsjfnskjfajnf f,nfkjfd </p>
-        </div>
-    </div>
- </div>
+    </div>  
+    <button type="button" class="btn">See More</button>
+</div>
+
 
 <!-- ------------------------- Contact -------------------------- -->
-
+<!--<hr class="divider">-->
 <div id="contact">
     <div class="container">
         <div class="row">
@@ -225,15 +294,16 @@
                     <a href="https://www.instagram.com/_kurama_lover?igsh=MW02dDQzZmZ6Z2N5dg=="><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://github.com/gscharanp"><i class="fa-brands fa-square-github"></i></a>
                 </div>
-                <a href="assets/resume.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i> Download CV </a>
+                <a href="assets/GONDU SAI CHARAN.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i> Download CV </a>
             </div>
             <div class="contact-right">
                 <form action="">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -294,25 +364,114 @@ function scrollToTop() {
 </script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const binaryRainContainer = document.querySelector(".binary-rain");
+    const canvas = document.getElementById("binaryCanvas");
+    const ctx = canvas.getContext("2d");
 
-        function createBinaryDigit() {
-            const span = document.createElement("span");
-            span.innerText = Math.random() < 0.5 ? "0" : "1";
-            span.style.left = Math.random() * 100 + "vw";
-            span.style.animationDuration = Math.random() * 3 + 2 + "s";
-            binaryRainContainer.appendChild(span);
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-            setTimeout(() => {
-                span.remove();
-            }, 5000);
+    const binary = "010101010101";
+    const fontSize = 18;
+    const columns = canvas.width / fontSize;
+    const drops = Array(Math.floor(columns)).fill(1);
+
+    function draw() {
+        ctx.fillStyle = "rgba(0, 0, 0, 0.1)"; 
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "darkgreen"; // Green binary color
+        ctx.font = fontSize + "px monospace";
+
+        for (let i = 0; i < drops.length; i++) {
+            const text = binary[Math.floor(Math.random() * binary.length)];
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.95) {
+                drops[i] = 0;
+            }
+            drops[i]++;
         }
+    }
 
-        setInterval(createBinaryDigit, 1);
+    setInterval(draw, 50);
+
+    // Resize canvas on window resize
+    window.addEventListener("resize", () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
     });
 </script>
 
+<script>
+    // Function to show certificate details in modal
+function showCertificate(certId) {
+    // Get modal elements
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+    const captionText = document.getElementById("caption");
+    const certificateDetails = {
+        cert1: `<h2>Front-End Developer</h2>
+                <p><strong>Internship:</strong> StackNexus (Internz)</p>
+                <p>Successfully completed a long-term virtual internship program from May 30, 2023 – August 4, 2023.</p>
+                <ul>
+                    <li>Hands-on experience in HTML, CSS, JavaScript, and UI/UX design principles.</li>
+                    <li>Developed responsive and user-friendly web applications.</li>
+                    <li>Learned modern front-end frameworks and improved problem-solving skills.</li>
+                    <li>Demonstrated strong commitment to self-learning and technical growth.</li>
+                </ul>`,
+
+        cert2: `<h2>SolidWorks Internship</h2>
+                <p><strong>Internship:</strong> SkillDzire (APSCHE Collaboration)</p>
+                <p>Completed a 240-hour internship, gaining proficiency in:</p>
+                <ul>
+                    <li>3D modeling, CAD design, and engineering simulations using SolidWorks.</li>
+                    <li>Product development and mechanical drafting.</li>
+                    <li>Parametric modeling, assembly design, and technical documentation.</li>
+                    <li>Internship certified by AICTE, issued on April 18, 2024.</li>
+                </ul>`,
+
+        cert3: `<h2>AutoCAD Workshop</h2>
+                <p><strong>Workshop:</strong> Learn Delta</p>
+                <p>Successfully completed a certified AutoCAD-2D workshop with an ‘A’ Grade.</p>
+                <ul>
+                    <li>Learned technical drafting, blueprint creation, and precision drawing techniques.</li>
+                    <li>Acquired expertise in 2D design, layering, dimensioning, and CAD tools.</li>
+                    <li>Experience in creating industrial drawings and engineering schematics.</li>
+                    <li>Improved ability to design mechanical components and read blueprints.</li>
+                </ul>`,
+
+        cert4: `<h2>Industrial Training</h2>
+                <p><strong>Training:</strong> Visakhapatnam Steel Plant (RINL)</p>
+                <p>Completed industrial training at Rashtriya Ispat Nigam Limited (RINL).</p>
+                <ul>
+                    <li>Gained insights into steel manufacturing processes, metallurgy, and engineering.</li>
+                    <li>Learned about high-temperature furnaces, casting, rolling, and quality control.</li>
+                    <li>Understood safety protocols and workflow management in heavy industries.</li>
+                    <li>Experienced hands-on training, working with engineers and supervisors.</li>
+                </ul>`
+};
+
+    // Find the clicked certificate
+    const certificate = document.querySelector(`[onclick="showCertificate('${certId}')"]`);
+
+    if (certificate) {
+        // Get the image source and certificate title
+        const imgSrc = certificate.querySelector("img").src;
+        const title = certificate.querySelector("p").innerText;
+
+        // Set modal content
+        modal.style.display = "block";
+        modalImg.src = imgSrc;
+        captionText.innerHTML = `<h2>${title}</h2><p>${certificateDetails[certId] || "Certificate details not available."}</p>`;
+    }
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+</script>
 
 </body>
 </html>
